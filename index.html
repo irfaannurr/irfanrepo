@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Biodata</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Form Biodata</h2>
+        <form id="biodataForm">
+            <label for="npm">NPM:</label>
+            <input type="text" id="npm" required>
+
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" required>
+
+            <label for="kelas">Kelas:</label>
+            <input type="text" id="kelas" required>
+
+            <label for="fakultas">Fakultas:</label>
+            <input type="text" id="fakultas" required>
+
+            <label for="jurusan">Jurusan:</label>
+            <input type="text" id="jurusan" required>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+
+        <div id="dataContainer">
+            <h2>Data Biodata</h2>
+            <table id="biodataTable">
+                <thead>
+                    <tr>
+                        <th>NPM</th>
+                        <th>Nama</th>
+                        <th>Kelas</th>
+                        <th>Fakultas</th>
+                        <th>Jurusan</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
